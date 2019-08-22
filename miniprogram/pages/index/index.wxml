@@ -1,0 +1,89 @@
+<!--index.wxml-->
+
+<!--
+<view class="container">
+
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view>
+      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+    </view>
+  </view>
+
+
+  <view class="uploader">
+    <view class="uploader-text" bindtap="doUpload">
+      <text>上传图片</text>
+    </view>
+    <view class="uploader-container" wx:if="{{imgUrl}}">
+      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
+    </view>
+  </view>
+
+
+  <view class="uploader">
+    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
+      <text>前端操作数据库</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
+      <text>快速新建云函数</text>
+    </navigator>
+  </view>
+
+  <view class="uploader">
+    <navigator url="../openapi/openapi" open-type="navigate" class="uploader-text">
+      <text>云调用</text>
+    </navigator>
+  </view>
+
+</view>
+-->
+
+<swiper class='swiper-box' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:{{Height}}' circular="true">
+  <block wx:for="{{ bannerUrls }}">
+    <swiper-item>
+      <view>
+        <!--<image class="slide-image" src="{{ item.url }}"  mode="aspectFit" bindload='imgHeight' mode='widthFix'></image>-->
+        <image class="slide-image" src="{{ item.url }}"  mode="aspectFit" ></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view>
+  <text>\n</text>
+  <van-row gutter="10">
+    <van-col span="10" offset="3"> <van-button plain hairline icon="column" type="info" bind:click="onClick1">中捷概况</van-button> </van-col>
+    <van-col span="10"> <van-button plain hairline icon="todo-list" type="info" bind:click="onClick2">历史沿革</van-button></van-col>
+  </van-row>
+  <text>\n</text>
+  <van-row gutter="10">
+    <van-col span="10" offset="3"> <van-button plain hairline icon="map-marked" type="info" bind:click="onClick3">人文地理</van-button> </van-col>
+    <van-col span="10"> <van-button plain hairline icon="photograph" type="info" bind:click="onClick4">中捷风光</van-button></van-col>
+  </van-row>
+</view>
+
+<view class="test">
+  <image mode="aspectFit" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/wxacode_default_openapi_page.jpeg"></image>
+  <text decode="true" space="true">&emsp;&emsp;中捷产业园区前身中捷友谊农场，是一个国际合作大型农垦企业。1956年1月，国家副主席朱德对捷克斯洛伐克进行友好访问，捷政府向中国赠送了670台可耕种7000公顷土地的农业机械设备。1956年7月，为永久纪念中国和捷克斯洛伐克两国人民的友谊，经国务院批准，周恩来亲自命名了接收这批设备的地域为“中捷友谊农场”。2003年7月河北省农垦改制，中捷农场更名为沧州临港经济技术开发区；2007年渤海新区成立，中捷更名为沧州渤海新区中捷产业园区，中捷友谊农场名称继续保留。</text>
+  <van-button plain hairline icon="star-o" type="info">按钮</van-button>
+  <van-button round type="info">圆</van-button>
+</view>
+
+<view class="container">
+  <text>\n\n\n</text>
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item name="index" icon="description">走进中捷</van-tabbar-item>
+    <van-tabbar-item name="apps" icon="apps-o">了解中捷</van-tabbar-item>
+    <van-tabbar-item name="tourism" icon="logistics">漫步中捷</van-tabbar-item>
+  </van-tabbar>
+</view>
+

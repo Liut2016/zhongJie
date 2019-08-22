@@ -1,0 +1,15 @@
+/* miniprogram/pages/content/index2.wxss */
+.test {
+  width: 90%;
+  margin-left: 5%;
+}
+.text {
+  width: 90%;
+  text-indent:2em;
+  line-height:1.5em;
+  letter-spacing:2rpx;
+  word-spacing:2rpx;
+  text-align:center; 
+  box-sizing: border-box;
+  font-family:MicroSoft yahei;
+}

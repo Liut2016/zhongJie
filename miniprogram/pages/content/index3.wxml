@@ -1,0 +1,8 @@
+<!--miniprogram/pages/content/index3.wxml-->
+<view class="test">
+  <text decode="true" space="true" class="text">
+    &emsp;&emsp;中捷产业园区隶属河北省沧州市渤海新区，总面积268平方公里，总人口4.2万人。园区位于河北省东南部渤海西岸，处于环渤海经济圈的前沿地带。北距天津100公里、北京240公里，西至沧州市60公里，东临黄骅港20公里。中捷40万亩国有土地中，尚未开发利用的盐碱荒地15万亩，是罕有的一块面积大、人口少、可用于工业和城市建设的黄金宝地和待开发地。中捷产业园区的区位优势使中捷成为港口腹地对接国际市场的重要通道，环渤海经济圈中极具活力的地区和经济交往的前沿。立足这里可以承东启西，纵贯南北，仰视京津，面向世界。 </text>
+</view>
+
+<map id="map" longitude="117.4691033363" latitude="38.3880621152" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"  bindregionchange="regionchange" show-location style="width: 80%; height: 500rpx; margin-left: 10%"></map>
+

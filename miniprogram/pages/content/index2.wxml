@@ -1,0 +1,7 @@
+<!--miniprogram/pages/content/index2.wxml-->
+<view class="test">
+  <text decode="true" space="true" class="text">
+    &emsp;&emsp;中捷产业园区前身中捷友谊农场，是一个国际合作大型农垦企业。1956年1月，国家副主席朱德对捷克斯洛伐克进行友好访问，捷政府向中国赠送了670台可耕种7000公顷土地的农业机械设备。1956年7月，为永久纪念中国和捷克斯洛伐克两国人民的友谊，经国务院批准，周恩来亲自命名了接收这批设备的地域为“中捷友谊农场”。2003年7月河北省农垦改制，中捷农场更名为沧州临港经济技术开发区；2007年渤海新区成立，中捷更名为沧州渤海新区中捷产业园区，中捷友谊农场名称继续保留。</text>
+  <image mode="aspectFit" src="cloud://shidian-bn657.7368-shidian-bn657/2013121754334541.jpg"></image>
+</view>
+
