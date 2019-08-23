@@ -1,12 +1,30 @@
 <!--miniprogram/pages/apps/apps.wxml-->
 <view>
   <van-tabs active="{{ active }}">
-    <van-tab title="标签 1">内容 1</van-tab>
-    <van-tab title="标签 2">内容 2</van-tab>
-    <van-tab title="标签 3">内容 3</van-tab>
-    <van-tab title="标签 4">内容 4</van-tab>
-    <van-tab title="标签 5">内容 5</van-tab>
-    <van-tab title="标签 6">内容 6</van-tab>
+    <van-tab title="新型工业">
+      <van-collapse value="{{ activeName }}" bind:change="onChange1" accordion>
+        <van-collapse-item title="有赞微商城" name="1">
+          提供多样店铺模板，快速搭建网上商城
+        </van-collapse-item>
+        <van-collapse-item title="有赞零售" name="2">
+          网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+        </van-collapse-item>
+        <van-collapse-item title="有赞美业" name="3">
+          线上拓客，随时预约，贴心顺手的开单收银
+        </van-collapse-item>
+      </van-collapse>
+    </van-tab>
+    <van-tab title="现代农业">内容 2</van-tab>
+    <van-tab title="民生事业">内容 3</van-tab>
+    <van-tab title="厚德文明">内容 4</van-tab>
+    <van-tab title="国际友谊">内容 5</van-tab>
+    <van-tab title="高歌盛世">内容 6</van-tab>
+    <van-tab title="光影中捷">
+      <view >
+        <video src='{{videoUrl}}' bindplay='playVideo' id="myVideo"></video>
+        <view class='tips'>建议WIFI环境下播放</view>
+      </view>
+    </van-tab>
   </van-tabs>
 </view>
 <view class="container">

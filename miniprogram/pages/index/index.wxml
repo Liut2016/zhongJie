@@ -61,21 +61,38 @@
 <view>
   <text>\n</text>
   <van-row gutter="10">
-    <van-col span="10" offset="3"> <van-button plain hairline icon="column" type="info" bind:click="onClick1">中捷概况</van-button> </van-col>
-    <van-col span="10"> <van-button plain hairline icon="todo-list" type="info" bind:click="onClick2">历史沿革</van-button></van-col>
+    <van-col span="9" offset="3"> <van-button plain hairline icon="column" type="info" bind:click="onClick1">中捷概况</van-button> </van-col>
+    <van-col span="9"> <van-button plain hairline icon="todo-list" type="info" bind:click="onClick2">历史沿革</van-button></van-col>
   </van-row>
   <text>\n</text>
   <van-row gutter="10">
-    <van-col span="10" offset="3"> <van-button plain hairline icon="map-marked" type="info" bind:click="onClick3">人文地理</van-button> </van-col>
-    <van-col span="10"> <van-button plain hairline icon="photograph" type="info" bind:click="onClick4">中捷风光</van-button></van-col>
+    <van-col span="9" offset="3"> <van-button plain hairline icon="map-marked" type="info" bind:click="onClick3">人文地理</van-button> </van-col>
+    <van-col span="9"> <van-button plain hairline icon="photograph" type="info" bind:click="onClick4">中捷风光</van-button></van-col>
   </van-row>
 </view>
 
 <view class="test">
-  <image mode="aspectFit" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/wxacode_default_openapi_page.jpeg"></image>
-  <text decode="true" space="true">&emsp;&emsp;中捷产业园区前身中捷友谊农场，是一个国际合作大型农垦企业。1956年1月，国家副主席朱德对捷克斯洛伐克进行友好访问，捷政府向中国赠送了670台可耕种7000公顷土地的农业机械设备。1956年7月，为永久纪念中国和捷克斯洛伐克两国人民的友谊，经国务院批准，周恩来亲自命名了接收这批设备的地域为“中捷友谊农场”。2003年7月河北省农垦改制，中捷农场更名为沧州临港经济技术开发区；2007年渤海新区成立，中捷更名为沧州渤海新区中捷产业园区，中捷友谊农场名称继续保留。</text>
-  <van-button plain hairline icon="star-o" type="info">按钮</van-button>
-  <van-button round type="info">圆</van-button>
+  <text>\n</text>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/1-2.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/3-4.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/5-6.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/7-8.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/9-10.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/11-12.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/13-14.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/15-16.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/17-18.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/19-20.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/21-22.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/23-24.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/25-26.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/27-28.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/29-30.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/31-32.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/33-34.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/35-36.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/37-38.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/39-封三.jpg"></image>
 </view>
 
 <view class="container">

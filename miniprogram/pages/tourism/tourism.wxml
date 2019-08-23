@@ -1,5 +1,28 @@
 <!--miniprogram/pages/tourism/tourism.wxml-->
-<text>miniprogram/pages/tourism/tourism.wxml</text>
+
+<view class="test">
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/1-2.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/3-4.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/5-6.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/7-8.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/9-10.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/11-12.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/13-14.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/15-16.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/17-18.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/19-20.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/21-22.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/23-24.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/25-26.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/27-28.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/29-30.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/31-32.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/33-34.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/35-36.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/37-38.jpg"></image>
+  <image mode="aspectFit" lazy-load="true" src="cloud://shidian-bn657.7368-shidian-bn657-1300032961/39-封三.jpg"></image>
+</view>
+
 <view class="container">
   <text>\n\n\n</text>
   <van-tabbar active="{{ active }}" bind:change="onChange">

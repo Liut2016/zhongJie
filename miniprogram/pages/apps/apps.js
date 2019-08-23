@@ -6,6 +6,8 @@ Page({
    */
   data: {
     active: 'apps',
+    videoUrl: '',
+    activeName: '0'
   },
 
   /**
@@ -21,11 +23,62 @@ Page({
     console.log(event.detail);
   },
 
+
+  /**
+   * 新闻跳转
+   */
+  onChange1(event) {
+    this.setData({
+      activeName: event.detail
+    });
+  },
+
+
+
+  getVideoInfo(vedio) {
+    if (!vedio) return
+    var vid = vedio.substring(vedio.lastIndexOf('/') + 1, vedio.lastIndexOf('html') - 1);
+    var that = this;
+    var urlString = 'https://vv.video.qq.com/getinfo?otype=json&appver=3.2.19.333&platform=11&defnpayver=1&vid=' + vid;
+    wx.request({
+      url: urlString,
+      success: function (res) {
+        var dataJson = res.data.replace(/QZOutputJson=/, '') + "qwe";
+        var data = JSON.parse(dataJson);
+        var fileName = data['vl']['vi'][0]['fn'];
+        var fvkey = data['vl']['vi'][0]['fvkey'];
+        var host = data['vl']['vi'][0]['ul']['ui'][2]['url']
+        that.setData({
+          videoUrl: host + fileName + '?vkey=' + fvkey
+        });
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+    var vedio = "https://v.qq.com/x/page/v0336yczs4g.html";
+    var vid = vedio.substring(vedio.lastIndexOf('/') + 1, vedio.lastIndexOf('html') - 1);
+    var that = this;
+    var urlString = 'https://vv.video.qq.com/getinfo?otype=json&appver=3.2.19.333&platform=11&defnpayver=1&vid=' + vid;
+    wx.request({
+      url: urlString,
+      success: function (res) {
+        var dataJson = res.data.replace(/QZOutputJson=/, '') + "qwe";
+        var data = JSON.parse(dataJson);
+        var fileName = data['vl']['vi'][0]['fn'];
+        var fvkey = data['vl']['vi'][0]['fvkey'];
+        var host = data['vl']['vi'][0]['ul']['ui'][2]['url']
+        that.setData({
+          videoUrl: host + fileName + '?vkey=' + fvkey
+        });
+      }
+    })
+
+    //  getVideoInfo("https://v.qq.com/x/page/v0336yczs4g.html");
   },
 
   /**
